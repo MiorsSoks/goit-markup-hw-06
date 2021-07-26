@@ -45,10 +45,6 @@ body {
   margin: 0 auto;
 }
 /* ============ Хедер ============ */
-.header {
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
-}
 .header-container {
   display: flex;
   align-items: center;
@@ -371,8 +367,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.clients-item {
-}
 .clients-icon {
   width: 106px;
   height: 60px;
@@ -567,8 +561,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.right-address-container {
-}
 .join-background-icon {
   display: flex;
   justify-content: center;
@@ -598,6 +590,8 @@ body {
 }
 
 /* ============ Футер конец ============ */
+
+/* ============ Бэкдроп и Модалка ============ */
 
 .backdrop {
   position: fixed;
@@ -642,8 +636,98 @@ body {
   width: 18px;
   height: 18px;
 }
+.close-btn-icon:hover,
+.close-btn-icon:focus {
+  fill: var(--accent-color);
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+.modal-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.modal-form-input-icon {
+  position: relative;
+  display: block;
+}
+.modal-form-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  display: block;
+  padding-left: 42px;
+}
+.modal-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.modal-form-input::placeholder {
+  padding-left: 42px;
+}
+.modal-form-textarea-comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.modal-form-textarea-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-text {
+  color: var(--primary-text-grey-color);
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 0.33;
+  letter-spacing: 0.01em;
+}
+.accept-policy-text {
+  margin-bottom: 30px;
+}
+.accept-policy-link {
+  color: var(--accent-color);
+}
+.modal-form-button {
+  font-family: inherit;
+  color: var(--primary-text-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  align-self: center;
+}
+
+/* ============ Бэкдроп и Модалка конец ============ */
