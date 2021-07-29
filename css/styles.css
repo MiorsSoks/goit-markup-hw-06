@@ -790,7 +790,7 @@ body {
 .modal-form-checkbox-label::before {
   display: flex;
   content: "";
-  background-image: url(/images/icon-not-check.svg);
+  background-image: url(./images/icon-not-check.svg);
   display: block;
   width: 16px;
   height: 15px;
@@ -801,17 +801,17 @@ body {
   align-items: center;
 }
 .modal-form-input-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(/images/icon-check.svg);
+  background-image: url(./images/icon-check.svg);
   display: block;
   width: 16px;
   height: 15px;
   cursor: pointer;
 }
 .modal-form-input-checkbox:focus + .modal-form-checkbox-label::before {
-  background-image: url(/images/icon-not-check-blue.svg);
+  background-image: url(./images/icon-not-check-blue.svg);
 }
 .modal-form-input-checkbox:checked:focus + .modal-form-checkbox-label::before {
-  background-image: url(/images/icon-check.svg);
+  background-image: url(./images/icon-check.svg);
 }
 .accept-policy-link {
   color: var(--accent-color);
