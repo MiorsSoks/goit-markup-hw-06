@@ -622,6 +622,11 @@ body {
   height: 50px;
   padding-left: 16px;
   color: var(--primary-text-white-color);
+  outline: none;
+}
+.input-follow:focus,
+.input-follow:hover {
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .button-follow {
   color: var(--primary-text-white-color);
@@ -694,9 +699,10 @@ body {
   width: 18px;
   height: 18px;
 }
-.close-btn-icon:hover,
-.close-btn-icon:focus {
+.close-btn .close-btn-icon:hover,
+.close-btn .close-btn-icon:focus {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
@@ -739,12 +745,16 @@ body {
   left: 12px;
   transform: translateY(-50%);
 }
-.modal-form-input:focus + .modal-icon {
+.modal-form-input:focus + .modal-icon,
+.modal-form-input:hover + .modal-icon {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-input:hover {
   outline: none;
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input::placeholder {
   padding-left: 42px;
@@ -759,9 +769,11 @@ body {
   resize: none;
   margin-bottom: 20px;
 }
-.modal-form-textarea-comment:focus {
+.modal-form-textarea-comment:focus,
+.modal-form-textarea-comment:hover {
   outline: none;
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-textarea-comment::placeholder {
