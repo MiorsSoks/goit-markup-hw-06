@@ -470,7 +470,7 @@
             Подпишитесь на рассылку</label>
             <div class="button-input-container">
               <form action="#" class="form-follow">
-              <input id="email-follow" type="email" class="input-follow" placeholder="E-mail">
+              <input id="email-follow" type="email" class="input-follow" placeholder="E-mail" name="email">
             <button type="submit" class="button-follow">Подписаться
               <svg class="follow-icon">
                 <use
@@ -491,7 +491,7 @@
         <form action="#" class="modal-form">
           <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
           <label for="name" class="modal-form-label">Имя</label>
-            <span class="modal-form-input-icon"><input id="name" class="modal-form-input" type="text" name="name" placeholder=" " required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы">
+            <span class="modal-form-input-icon"><input id="name" class="modal-form-input" type="text" name="user-name" placeholder=" " required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы">
             <svg class="modal-icon">
                     <use
                       href="./images/symbol-defs.svg#icon-person"
@@ -515,7 +515,7 @@
                 ></span>
           
           <label for="comment" class="modal-form-label">Комментарий</label>
-            <textarea name="" id="comment" cols="30" rows="10" class="modal-form-textarea-comment" placeholder="Введите текст"></textarea>
+            <textarea name="comment" id="comment" cols="30" rows="10" class="modal-form-textarea-comment" placeholder="Введите текст"></textarea>
           
             <input class="modal-form-input-checkbox visualiy-hidden" type="checkbox" name="comment" id="accept-policy">
             <label for="accept-policy" class="modal-form-label modal-form-checkbox-label"><p class="modal-form-text accept-policy-text">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="accept-policy-link">Условия договора</a></p></label>
