@@ -699,8 +699,8 @@ body {
   width: 18px;
   height: 18px;
 }
-.close-btn .close-btn-icon:hover,
-.close-btn .close-btn-icon:focus {
+.close-btn:hover > .close-btn-icon,
+.close-btn:focus > .close-btn-icon {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -726,6 +726,7 @@ body {
 .modal-form-input-icon {
   position: relative;
   display: block;
+  margin-bottom: 10px;
 }
 .modal-form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -785,18 +786,16 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-}
-.modal-form-label:not(:last-child) {
   margin-bottom: 4px;
 }
-.modal-form-label:not(:first-child) {
-  margin-top: 10px;
-}
+
 .accept-policy-text {
-  margin-left: 9px;
+  color: var(--primary-text-grey-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
 }
 
 .modal-form-checkbox-label::before {
@@ -807,6 +806,10 @@ body {
   width: 16px;
   height: 15px;
   cursor: pointer;
+  margin-right: 9px;
+  margin-left: 10px;
+
+  text-align: center;
 }
 .modal-form-checkbox-label {
   display: flex;
